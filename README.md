@@ -33,6 +33,8 @@ I tracked my time working on this challenge in the following table:
 
 1 Pomodoro = 25 min
 
-| Date | Pomodoro(s) | Work Accomplished                             |
-| ---- | ----------- | --------------------------------------------- |
-| 12/9 | 1           | Initialize, start Readme, start brainstorming |
+| Pomodoro(s) | Work Accomplished                              |
+| ----------- | ---------------------------------------------- |
+| 1           | Initialize, start Readme, start brainstorming  |
+| 2           | App.js, App.test.js, Header.js, Header.test.js |
+| 3           |

@@ -1,0 +1,49 @@
+/* Variables  */
+
+  /* Light Mode */
+
+  body, body.light-theme {
+    --bg-1: #f3f3ff;
+    --bg-2: #f8f8ff;
+    --bg-3: #fdfdff;  
+    --bg-0: #eeeeff;
+    --text-normal: #00041c;
+    --text-accent: #00138f;
+    --text-grey: #696971;
+    --error: #d6001d;
+    --success: #007510;
+    --accent: #001dd6;
+    --accent-light: #4d63f3;
+    --accent-dark: #00138f;
+  }
+
+  /* Dark mode */
+
+  body.dark-theme {
+    --bg-1: #1c1e2b;
+    --bg-2: #232534;
+    --bg-3: #34384e;
+    --bg-0: #00041c;
+    --text-normal: #fbfbff;
+    --text-accent: #bfc7fb;
+    --text-grey: #bfc1ce;
+    --error: #f34d63;
+    --success: #00b318;
+    --accent: #4d63f3;
+    --accent-light: #99a6f8;
+    --accent-dark: #001dd6;
+  }
+
+/* Global Colors */
+
+body {
+  background: var(--bg-0);
+}
+
+h1,h2,h3,h4,h5,h6,a {
+  color: var(--text-accent)
+}
+
+p, div {
+  color: var(--text-normal)
+}
