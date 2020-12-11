@@ -1,6 +1,28 @@
 # Company Profile Coding Challenge
 
-## Requirements
+**_This is still a work in progress!_**
+
+## Getting Started
+
+To install the app locally, clone the repo and then:
+
+```bash
+yarn install
+```
+
+To start the dev server:
+
+```bash
+yarn start
+```
+
+To run the tests:
+
+```bash
+yarn test
+```
+
+## Project Requirements
 
 The at-home coding exercise is simply this: read data from a publicly available REST api, and display the results on a web page.
 
@@ -61,3 +83,4 @@ I tracked my time working on this challenge in the following table:
 |    10,11,12 | callFmpApi and test (mocking fetch in Jest ...:shrug:)         |
 |      13, 14 | MainInfo and tests                                             |
 |          15 | DataDisplay and tests                                          |
+|          16 | Basic css                                                      |
