@@ -67,6 +67,12 @@ I would love to add an explanation for what the different items in the Company P
 
 ## My Workflow
 
+### Git
+
+I've tried to make meaningful git commit messages along the way, but of course in a production environment, there would be feature branches, rebases, squashing commits, etc. I haven't done any of that, simply because I'll never actually need to collaborate with anyone on this repo.
+
+### My Time
+
 I tracked my time working on this challenge in the following table:
 
 1 Pomodoro = 25 min
@@ -84,3 +90,4 @@ I tracked my time working on this challenge in the following table:
 |      13, 14 | MainInfo and tests                                             |
 |          15 | DataDisplay and tests                                          |
 |          16 | Basic css                                                      |
+|         ... | ...still working                                               |
