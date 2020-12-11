@@ -1,0 +1,12 @@
+/* Variables */
+
+:root {
+  --border-radius: 1rem;
+}
+
+:root.lightTheme {
+  --box-shadow: 5px 0px 10px rgba(105, 105, 113, 0.25),
+    -5px 0px 10px rgba(105, 105, 113, 0.25),
+    0px 5px 10px rgba(105, 105, 113, 0.25),
+    0px -5px 10px rgba(105, 105, 113, 0.25);
+}

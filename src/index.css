@@ -1,14 +1,12 @@
 @import-normalize;
 @import "./styles/_colors.css";
 @import "./styles/_type.css";
+@import "./styles/_design.css";
 
 /* Global Styles */
 
-html {
-  padding: 0;
-}
-
-body {
+* {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }

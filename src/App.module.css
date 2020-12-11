@@ -6,7 +6,10 @@
 
 .mainContent {
   flex: 1;
-  margin: 0 auto;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
   width: min(65em, 95vw);
   background-color: var(--bg-1);
 }

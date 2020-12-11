@@ -9,7 +9,7 @@ const App = () => {
     <div className={style.appRoot}>
       <p hidden={true}>The App has rendered</p>
       <Header />
-      <div className={style.mainContent}>
+      <div className={`${style.mainContent}`}>
         <CompanyProfileWidget />
       </div>
       <Footer />
