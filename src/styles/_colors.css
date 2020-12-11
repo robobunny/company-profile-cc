@@ -2,8 +2,8 @@
 
 /* Light Mode */
 
-:root,
-:root.lightTheme {
+body,
+body.light-mode {
   --bg-1: #f3f3ff;
   --bg-2: #f8f8ff;
   --bg-3: #fdfdff;
@@ -28,7 +28,7 @@
 
 /* Dark mode */
 
-:root.darkTheme {
+body.dark-mode {
   --bg-1: #1c1e2b;
   --bg-2: #232534;
   --bg-3: #34384e;
