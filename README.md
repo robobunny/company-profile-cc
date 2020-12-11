@@ -1,7 +1,5 @@
 # Company Profile Coding Challenge
 
-**_This is still a work in progress!_**
-
 ## Getting Started
 
 To install the app locally, clone the repo and then:
