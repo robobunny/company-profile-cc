@@ -49,7 +49,28 @@ With this coding challenge I want to demonstrate my ability to write clean, sema
 
 ## My Solution
 
+### Tech Stack
+
+- React
+- Jest
+- React Testing Library
+- CSS
+
+#### React
+
+I'm using React to build the app. It's the JS framework I'm most comfortable with. The interesting React features that I've employed are:
+
+**Functional Components and Hooks** - pretty much obvious nowadays, I guess
+
+**Custom Hooks** - I made the `useCssDarkMode` hook to help control the mood. No need for `useContext` since I'm not using styled components so the hook is enough. It uses `useState` and a couple of `useEffect` calls to check for and save the user's preferences to `localStorage` (see more about the CSS below)
+
+#### CSS
+
+Although I like to use SCSS, for this project which is very straightforward I saw no need for it. My dark mode is controlled using `light-mode` and `dark-mode` classes on the body element. The color variables are defined in the `body.light-mode` and `body.dark-mode` selectors so that the changes percolate down through the DOM when the child elements call those variables. The magic of pure old-fashioned CSS.
+
 ### Challenges and Anomalies
+
+I ran into some interesting challenges and hurdles while doing this project. Among them:
 
 #### Differences in JSON data between browsers and Node.js
 
@@ -77,17 +98,20 @@ I tracked my time working on this challenge in the following table:
 
 1 Pomodoro = 25 min
 
-| Pomodoro(s) | Work Accomplished                                              |
-| ----------: | -------------------------------------------------------------- |
-|           1 | Initialize, start Readme, start brainstorming                  |
-|           2 | App.js, App.test.js, Header.js, Header.test.js                 |
-|           3 | initialize css and basic layout                                |
-|         4,5 | StockSymbolInput and tests                                     |
-|         6,9 | getCompanyProfile and tests                                    |
-|           7 | Figuring out what does all this stuff mean (see brainstorm.md) |
-|           8 | Making CompanyProfileData class                                |
-|    10,11,12 | callFmpApi and test (mocking fetch in Jest ...:shrug:)         |
-|      13, 14 | MainInfo and tests                                             |
-|          15 | DataDisplay and tests                                          |
-|          16 | Basic css                                                      |
-|         ... | ...still working                                               |
+|    Pomodoro(s) | Work Accomplished                                              |
+| -------------: | -------------------------------------------------------------- |
+|              1 | Initialize, start Readme, start brainstorming                  |
+|              2 | App.js, App.test.js, Header.js, Header.test.js                 |
+|              3 | initialize css and basic layout                                |
+|            4,5 | StockSymbolInput and tests                                     |
+|            6,9 | getCompanyProfile and tests                                    |
+|              7 | Figuring out what does all this stuff mean (see brainstorm.md) |
+|              8 | Making CompanyProfileData class                                |
+|       10,11,12 | callFmpApi and test (mocking fetch in Jest ...:shrug:)         |
+|         13, 14 | MainInfo and tests                                             |
+|             15 | DataDisplay and tests                                          |
+|             16 | Basic css                                                      |
+| 17, 18, 19, 20 | implement Dark Mode with useDarkMode and tests                 |
+|         21, 22 | add CSS to make it look nice                                   |
+
+So the total time was 22 \* .5hr = about 11 hrs of work. Probably ought to have been done faster but I spent a lot of time learning about module mocks in Jest and testing custom Hooks. It was a great project and I thank you for the opportunity. Also, if you're still reading this, you're a glutton for punishment in a way that I personally cannot fathom.
