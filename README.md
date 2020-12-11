@@ -1,5 +1,7 @@
 # Company Profile Coding Challenge
 
+Check out the app at: https://erstwhile-brontosaurus.netlify.app/
+
 ## Getting Started
 
 To install the app locally, clone the repo and then:
