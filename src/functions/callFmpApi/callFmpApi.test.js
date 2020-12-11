@@ -1,8 +1,6 @@
 import callFmpApi from "./callFmpApi";
 import { fakeApiData } from "../../classes/fakeApiDataForTests";
 
-global.fetch = jest.fn();
-
 describe("callFmpApi", () => {
   test("gets data from the Api", async () => {
     fetch.mockImplementation(() => {
