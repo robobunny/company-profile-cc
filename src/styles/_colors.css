@@ -4,10 +4,10 @@
 
 body,
 body.light-mode {
-  --bg-1: #f3f3ff;
-  --bg-2: #f8f8ff;
-  --bg-3: #fdfdff;
-  --bg-0: #eeeeff;
+  --bg-1: #d8d8ff;
+  --bg-2: #e0e0ff;
+  --bg-3: #f0f0ff;
+  --bg-0: #d0d0ff;
   --text-normal: #00041c;
   --text-accent: #00138f;
   --text-grey: #696971;
@@ -38,9 +38,9 @@ body.dark-mode {
   --text-grey: #bfc1ce;
   --error: #f34d63;
   --success: #00b318;
-  --positive: #00580c;
+  --positive: #136c21;
   --positive-text: #bfd5c2;
-  --negative: #aa0000;
+  --negative: #821717;
   --negative-text: #eabfbf;
   --accent: #4d63f3;
   --accent-light: #99a6f8;

@@ -7,7 +7,10 @@ const Footer = () => {
 
   return (
     <footer className={style.footer}>
-      <p>This web app was built by {author}</p>
+      <p>
+        This web app was built by <a href="https://billyd.dev">{author}</a>{" "}
+        using React
+      </p>
     </footer>
   );
 };

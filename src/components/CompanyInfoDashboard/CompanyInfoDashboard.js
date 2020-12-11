@@ -3,11 +3,22 @@ import DataUndefined from "./DataUndefined";
 import MainInfo from "./MainInfo/MainInfo";
 import DataDisplay from "./DataDisplay/DataDisplay";
 
+const styles = {
+  paragraph: {
+    color: "var(--text-accent)",
+    fontWeight: "bold",
+    margin: "1rem",
+    textAlign: "center",
+  },
+};
+
 const CompanyInfoDashboard = ({ displayData }) => {
   if (displayData === undefined) {
     return (
       <div>
-        <p>Enter a stock symbol above to search for a company's profile!</p>
+        <p style={styles.paragraph}>
+          Enter a stock symbol above to search for a company's profile!
+        </p>
       </div>
     );
   } else if (!displayData.success) {
@@ -19,6 +30,7 @@ const CompanyInfoDashboard = ({ displayData }) => {
   } else {
     return (
       <div>
+        <h2>Company Profile Information:</h2>
         <MainInfo data={displayData.mainInfo} />
         <DataDisplay
           sectionTitle="Stock Data"

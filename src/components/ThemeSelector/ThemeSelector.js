@@ -4,7 +4,7 @@ import useCssDarkMode from "../../hooks/useCssDarkMode";
 const ThemeSelector = () => {
   const { isDarkMode, toggleIsDarkMode } = useCssDarkMode();
   return (
-    <button onClick={toggleIsDarkMode}>
+    <button className="secondary" onClick={toggleIsDarkMode}>
       {isDarkMode ? "Light Mode" : "Dark Mode"}
     </button>
   );
