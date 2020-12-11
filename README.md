@@ -33,8 +33,16 @@ I tracked my time working on this challenge in the following table:
 
 1 Pomodoro = 25 min
 
-| Pomodoro(s) | Work Accomplished                              |
-| ----------- | ---------------------------------------------- |
-| 1           | Initialize, start Readme, start brainstorming  |
-| 2           | App.js, App.test.js, Header.js, Header.test.js |
-| 3           |
+| Pomodoro(s) | Work Accomplished                                              |
+| ----------- | -------------------------------------------------------------- |
+| 1           | Initialize, start Readme, start brainstorming                  |
+| 2           | App.js, App.test.js, Header.js, Header.test.js                 |
+| 3           | initialize css and basic layout                                |
+| 4,5         | StockSymbolInput and tests                                     |
+| 6,9         | getCompanyProfile and tests                                    |
+| 7           | Figuring out what does all this stuff mean (see brainstorm.md) |
+| 8           | Making CompanyProfileData class                                |
+| 10,11,12    | callFmpApi and test (mocking fetch in Jest ...:shrug:)         |
+
+| 13, 14 | MainInfo and tests |
+| 15 | DataDisplay and tests |

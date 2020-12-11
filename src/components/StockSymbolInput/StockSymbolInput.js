@@ -1,5 +1,5 @@
 import React from "react";
-import getCompanyProfile from "../../utils/getCompanyProfile";
+import getCompanyProfile from "../../functions/getCompanyProfile/getCompanyProfile";
 
 const StockSymbolInput = () => {
   const handleSubmit = (event) => {

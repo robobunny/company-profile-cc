@@ -3,7 +3,7 @@ import App from "./App";
 import { siteData } from "./siteData";
 
 describe("App", () => {
-  it("renders correctly", () => {
+  test("renders correctly", () => {
     const { getByText } = render(<App />);
     const heading = getByText("The App has rendered");
     expect(heading).toBeInTheDocument();
