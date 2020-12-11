@@ -1,11 +1,11 @@
 import React from "react";
 import getCompanyProfile from "../../functions/getCompanyProfile/getCompanyProfile";
 
-const StockSymbolInput = () => {
+const StockSymbolInput = ({ setDisplayData }) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     const stockSymbol = event.target.elements[`stock-symbol-input`].value;
-    getCompanyProfile(stockSymbol);
+    getCompanyProfile(stockSymbol).then((data) => setDisplayData(data));
   };
 
   return (

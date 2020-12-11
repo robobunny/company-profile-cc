@@ -1,7 +1,7 @@
 import React from "react";
 import makeKebobCase from "../../../functions/makeKebobCase/makeKebobCase";
 
-const DataDisplay = (props) => {
+const DataDisplay = ({ data, sectionTitle }) => {
   const MakeDataItem = ({ item }) => {
     const kebabLabel = makeKebobCase(item.label);
     return (
@@ -14,7 +14,8 @@ const DataDisplay = (props) => {
 
   return (
     <div>
-      {props.data.map((item, index) => (
+      <h2>{sectionTitle}</h2>
+      {data.map((item, index) => (
         <MakeDataItem item={item} key={index} />
       ))}
     </div>

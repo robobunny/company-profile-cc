@@ -1,46 +1,55 @@
 /* Variables  */
 
-  /* Light Mode */
+/* Light Mode */
 
-  :root, :root.lightTheme {
-    --bg-1: #f3f3ff;
-    --bg-2: #f8f8ff;
-    --bg-3: #fdfdff;  
-    --bg-0: #eeeeff;
-    --text-normal: #00041c;
-    --text-accent: #00138f;
-    --text-grey: #696971;
-    --error: #d6001d;
-    --success: #007510;
-    --accent: #001dd6;
-    --accent-light: #4d63f3;
-    --accent-dark: #00138f;
-    --contrast-bg-0: #00041c;
-    --contrast-bg-1: #1c1e2b;
-    --contrast-text: #fbfbff;
-    --contrast-text-accent: #bfc7fb;
-  }
+:root,
+:root.lightTheme {
+  --bg-1: #f3f3ff;
+  --bg-2: #f8f8ff;
+  --bg-3: #fdfdff;
+  --bg-0: #eeeeff;
+  --text-normal: #00041c;
+  --text-accent: #00138f;
+  --text-grey: #696971;
+  --error: #d6001d;
+  --success: #007510;
+  --positive-text: #004209;
+  --positive: #bfd5c2;
+  --negative-text: #7f0000;
+  --negative: #eabfbf;
+  --accent: #001dd6;
+  --accent-light: #4d63f3;
+  --accent-dark: #00138f;
+  --contrast-bg-0: #00041c;
+  --contrast-bg-1: #1c1e2b;
+  --contrast-text: #fbfbff;
+  --contrast-text-accent: #bfc7fb;
+}
 
-  /* Dark mode */
+/* Dark mode */
 
-  :root.darkTheme {
-    --bg-1: #1c1e2b;
-    --bg-2: #232534;
-    --bg-3: #34384e;
-    --bg-0: #00041c;
-    --text-normal: #fbfbff;
-    --text-accent: #bfc7fb;
-    --text-grey: #bfc1ce;
-    --error: #f34d63;
-    --success: #00b318;
-    --accent: #4d63f3;
-    --accent-light: #99a6f8;
-    --accent-dark: #001dd6;
-    --contrast-bg-0: #eeeeff;
-    --contrast-bg-1: #f3f3ff;
-    --contrast-text: #00041c;
-    --contrast-text-accent: #00138f;
-  }
+:root.darkTheme {
+  --bg-1: #1c1e2b;
+  --bg-2: #232534;
+  --bg-3: #34384e;
+  --bg-0: #00041c;
+  --text-normal: #fbfbff;
+  --text-accent: #bfc7fb;
+  --text-grey: #bfc1ce;
+  --error: #f34d63;
+  --success: #00b318;
+  --positive: #00580c;
+  --positive-text: #bfd5c2;
+  --negative: #aa0000;
+  --negative-text: #eabfbf;
+  --accent: #4d63f3;
+  --accent-light: #99a6f8;
+  --accent-dark: #001dd6;
+  --contrast-bg-0: #eeeeff;
+  --contrast-bg-1: #f3f3ff;
+  --contrast-text: #00041c;
+  --contrast-text-accent: #00138f;
+}
 
 /* Global Colors */
 
@@ -48,10 +57,17 @@ body {
   background: var(--bg-0);
 }
 
-h1,h2,h3,h4,h5,h6,a {
-  color: var(--text-accent)
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  color: var(--text-accent);
 }
 
-p, div {
-  color: var(--text-normal)
+p,
+div {
+  color: var(--text-normal);
 }

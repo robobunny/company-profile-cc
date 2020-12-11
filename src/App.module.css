@@ -6,4 +6,7 @@
 
 .mainContent {
   flex: 1;
+  margin: 0 auto;
+  width: min(65em, 95vw);
+  background-color: var(--bg-1);
 }

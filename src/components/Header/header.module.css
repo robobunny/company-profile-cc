@@ -1,4 +1,4 @@
 .header {
-  max-width: min(70em, 95vw);
-  margin: 1rem auto;
+  padding: 1rem;
+  margin: 1rem;
 }

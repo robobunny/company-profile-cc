@@ -4,7 +4,9 @@ import userEvent from "@testing-library/user-event";
 import StockSymbolInput from "./StockSymbolInput";
 import getCompanyProfile from "../../functions/getCompanyProfile/getCompanyProfile";
 
-jest.mock("../../functions/getCompanyProfile/getCompanyProfile");
+jest.mock("../../functions/getCompanyProfile/getCompanyProfile", () =>
+  jest.fn()
+);
 
 describe("Stock Symbol Input component", () => {
   test("renders the input and button", () => {
@@ -19,6 +21,7 @@ describe("Stock Symbol Input component", () => {
     const { getByLabelText, getByText } = render(<StockSymbolInput />);
     const inputSS = getByLabelText("Enter a stock symbol:");
     const submitButton = getByText("Search");
+    getCompanyProfile.mockImplementation((string) => Promise.resolve(string));
     userEvent.type(inputSS, "AAPL");
     userEvent.click(submitButton);
     expect(getCompanyProfile).toHaveBeenCalledWith("AAPL");
@@ -27,6 +30,7 @@ describe("Stock Symbol Input component", () => {
   test("submits with correct info on press enter", () => {
     const { getByLabelText } = render(<StockSymbolInput />);
     const inputSS = getByLabelText("Enter a stock symbol:");
+    getCompanyProfile.mockImplementation((string) => Promise.resolve(string));
     userEvent.type(inputSS, "AAPL{enter}");
     expect(getCompanyProfile).toHaveBeenCalledWith("AAPL");
   });
