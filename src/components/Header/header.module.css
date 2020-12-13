@@ -1,4 +1,12 @@
 .header {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
   padding: 1rem;
   margin: 1rem;
+}
+
+.headerInfo {
+  flex-grow: 1;
 }

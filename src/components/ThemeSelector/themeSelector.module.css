@@ -1,0 +1,19 @@
+button.darkBtn,
+button.lightBtn {
+  align-items: center;
+  background-color: var(--contrast-bg-1);
+  border: 2px solid var(--accent-light);
+  border-radius: 50%;
+  box-shadow: var(--box-shadow);
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+.lightSVG,
+.darkSVG {
+  color: var(--contrast-text-accent);
+  height: 2rem;
+  width: 2rem;
+}
