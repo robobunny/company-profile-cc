@@ -6,7 +6,9 @@ const StockSymbolInput = ({ setDisplayData }) => {
   const handleFormSubmit = (event) => {
     event.preventDefault();
     const stockSymbol = event.target.elements[`stock-symbol-input`].value;
-    getCompanyProfile(stockSymbol).then((data) => setDisplayData(data));
+    getCompanyProfile(stockSymbol)
+      .then((data) => setDisplayData(data))
+      .catch(() => null);
   };
 
   const handleFormReset = (event) => {
