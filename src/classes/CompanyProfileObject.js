@@ -1,5 +1,13 @@
 import addThousandsSeparators from "../functions/addThousandsSeparator/addThousandsSeparators";
 
+const ignoreErrors = (f) => {
+  try {
+    f();
+  } catch (e) {
+    return undefined;
+  }
+};
+
 const addDollarSign = (numString) => {
   if (typeof numString === "number") {
     numString = numString.toString();
@@ -50,11 +58,13 @@ export default class CompanyProfileObject {
     this.stockData = [
       {
         label: "Market Capitalization",
-        value: addDollarSign(addThousandsSeparators(data.mktCap)),
+        value: !!data.mktCap
+          ? addDollarSign(addThousandsSeparators(data.mktCap))
+          : undefined,
       },
       {
         label: "Average Volume",
-        value: addThousandsSeparators(data.volAvg),
+        value: !!data.volAvg ? addThousandsSeparators(data.volAvg) : undefined,
       },
       {
         label: "52 Week Range",
