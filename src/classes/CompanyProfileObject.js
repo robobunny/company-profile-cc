@@ -1,13 +1,5 @@
 import addThousandsSeparators from "../functions/addThousandsSeparator/addThousandsSeparators";
 
-const ignoreErrors = (f) => {
-  try {
-    f();
-  } catch (e) {
-    return undefined;
-  }
-};
-
 const addDollarSign = (numString) => {
   if (typeof numString === "number") {
     numString = numString.toString();
