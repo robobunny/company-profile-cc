@@ -8,7 +8,7 @@ const Sun = () => (
     fill="none"
     viewBox="0 0 24 24"
     stroke="currentColor"
-    className={styles.darkSVG}
+    className={styles.svg}
   >
     <path
       stroke-linecap="round"
@@ -25,7 +25,7 @@ const Moon = () => (
     fill="none"
     viewBox="0 0 24 24"
     stroke="currentColor"
-    className={styles.lightSVG}
+    className={styles.svg}
   >
     <path
       strokeLinecap="round"
@@ -39,10 +39,7 @@ const Moon = () => (
 const ThemeSelector = () => {
   const { isDarkMode, toggleIsDarkMode } = useCssDarkMode();
   return (
-    <button
-      className={isDarkMode ? styles.darkBtn : styles.lightBtn}
-      onClick={toggleIsDarkMode}
-    >
+    <button className={styles.themeBtn} onClick={toggleIsDarkMode}>
       {isDarkMode ? <Sun /> : <Moon />}
     </button>
   );

@@ -1,5 +1,4 @@
-button.darkBtn,
-button.lightBtn {
+button.themeBtn {
   align-items: center;
   background-color: var(--contrast-bg-1);
   border: 2px solid var(--accent-light);
@@ -11,8 +10,7 @@ button.lightBtn {
   border-radius: 50%;
 }
 
-.lightSVG,
-.darkSVG {
+.svg {
   color: var(--contrast-text-accent);
   height: 2rem;
   width: 2rem;
