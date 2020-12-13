@@ -12,8 +12,9 @@ const localStorageMock = {
 };
 Object.defineProperty(window, "localStorage", { value: localStorageMock });
 
-const matchMediaMock = jest.fn();
-Object.defineProperty(window, "matchMedia", { value: matchMediaMock });
+Object.defineProperty(window, "matchMedia", { value: jest.fn() });
 
-const mockFetch = jest.fn();
-Object.defineProperty(global, "fetch", { value: mockFetch });
+Object.defineProperty(window, "scrollTo", { value: jest.fn() });
+Object.defineProperty(window, "scroll", { value: jest.fn() });
+
+Object.defineProperty(global, "fetch", { value: jest.fn() });
