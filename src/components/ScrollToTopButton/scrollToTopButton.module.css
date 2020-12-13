@@ -1,0 +1,21 @@
+button.scrollToTopBtn {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+
+  align-items: center;
+  background-color: var(--bg-1);
+  border: 2px solid var(--accent-light);
+  border-radius: 50%;
+  box-shadow: var(--box-shadow);
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+.svg {
+  color: var(--text-grey);
+  height: 2rem;
+  width: 2rem;
+}
