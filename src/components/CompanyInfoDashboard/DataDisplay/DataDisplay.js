@@ -17,9 +17,13 @@ const DataDisplay = ({ data, sectionTitle }) => {
     <div>
       <h2>{sectionTitle}</h2>
       <div className={styles.displayInfo}>
-        {data.map((item, index) => (
-          <MakeDataItem item={item} key={index} />
-        ))}
+        {data.map((item, index) => {
+          if (!!item.value) {
+            return <MakeDataItem item={item} key={index} />;
+          } else {
+            return null;
+          }
+        })}
       </div>
     </div>
   );
