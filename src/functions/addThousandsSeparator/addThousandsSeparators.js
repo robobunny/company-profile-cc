@@ -1,6 +1,7 @@
 /**
  * Options
  * @typedef {Object} Options
+ * @type {object}
  * @property {boolean} force - whether non-digit chars at the beginning or end of a string should be ignored
  * @property {string} separator - the character(s) used as a thousands separator, defaults to ","
  * @property {string} decimalChar - the character(s) that indicate the decimal, defaults to "."
@@ -10,7 +11,7 @@
 /**
  * Tries to add thousands separators to a number or a number string.
  *
- * @param {string, number} input - number or string to be separated
+ * @param {(string|number)} input - number or string to be separated
  * @param {Options} options
  * @return {string} - e.g. "$1,234,567.00USD"
  *
