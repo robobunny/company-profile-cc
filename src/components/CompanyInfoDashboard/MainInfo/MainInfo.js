@@ -1,8 +1,10 @@
 import React from "react";
 import styles from "./mainInfo.module.css";
+import addThousandsSeparators from "../../../functions/addThousandsSeparator/addThousandsSeparators";
 
 const MainInfo = (props) => {
   const { companyName, symbol, price, changes, website, imageUrl } = props.data;
+
   const getChangeSymbol = () => {
     if (changes.value > 0) {
       return "+";
@@ -12,6 +14,7 @@ const MainInfo = (props) => {
       return "±";
     }
   };
+
   const getRedGreenStyles = (value) => {
     if (value > 0) {
       return `${styles.positive}`;
@@ -39,7 +42,7 @@ const MainInfo = (props) => {
         <div className={`${styles.infoBox}`}>
           <h3 id="price">{price.label}</h3>
           <p className={styles.big} aria-labelledby="price">
-            $ {price.value}
+            $ {addThousandsSeparators(price.value)}
           </p>
         </div>
         <div
@@ -52,8 +55,7 @@ const MainInfo = (props) => {
             className={`${styles.big} ${getRedGreenStyles(changes.value)}`}
             aria-labelledby="changes"
           >
-            {getChangeSymbol()}
-            {changes.value}
+            {getChangeSymbol()} $ {addThousandsSeparators(changes.value)}
           </p>
         </div>
         <div className={`${styles.infoBox}`}>
